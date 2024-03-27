@@ -52,4 +52,4 @@ SELECT * FROM `fabricantes` ORDER BY(nombre) ASC;
 
 SELECT `nombre`,`precio` FROM `productos` WHERE precio > 10000;
 
-SELECT `nombre`,`precio` FROM `productos` WHERE precio = (SELECT MIN(`precio`) FROM `productos`);
+SELECT `nombre`,MIN(`precio`) FROM `productos`;
